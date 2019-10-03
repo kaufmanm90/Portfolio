@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<!--
+    Name: Mike Kaufman 
+    Date Created: 10/1/19 
+    Most recent revision: 10/1/19
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact</title>	
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Contact Me</h1>
+        </header>
+		<hr/>
+		<a href="index.html"> Home </a>
+		<hr/>
+		<h2> Information Request</h2>
+		<form action="submit.html" method="post">
+			<label for="Firstname"> First Name: </label> <br/>
+			<input for="text" id="Firstname" name="Firstname"><br/>
+			<label for="Lastname"> Last Name: </label> <br/>
+			<input for="text" id="Lastname" name="Lastname"><br/>
+			<label for="phonenumber"> Phonenumber: </label> <br/>
+			<input for="text" id="Phonenumber" name="Phonenumber"><br/>
+			<label for="contact"> Best Time to Contact: </label><br/>
+			<select id="contact" name="contact">
+				<option value="morning"> Morning (8am-12pm)</option>
+				<option value="afternoon"> Afternoonn (12pm-4pm)</option>
+				<option value="evening"> Evening (4pm- 8pm)</option>
+			</select>
+			<Fieldset>
+				<legend> I am interested in (check all that apply)</legend>
+				<input type="checkbox" id="frontend" name="interest" value="frontend">
+				<label for="frontend"> Front End Developoment </label><br/>
+				<input type="checkbox" id="backend" name="interest" value="backend">
+				<label for="backend"> Back End Developoment </label><br/>
+				<input type="checkbox" id="database" name="interest" value="database">
+				<label for="database"> Database Design </label><br/>
+			</fieldset>
+			<Fieldset>
+				<legend> I have filled in the questionniare form</legend>
+				<input type="radio" id="choice1" name="questionniare" value="yes">
+				<label for="choice1"> Yes </label><br/>
+				<input type="radio" id="choice2" name="questionniare" value="no">
+				<label for="choice2"> No </label><br/>
+				<input type="radio" id="choice3" name="questionniare" value="maybe">
+				<label for="choice3"> Maybe </label><br/>
+			</fieldset>
+			<label for="info"> Additional Information </label><br/>
+			<textarea id="info" name="info"></textarea><br/>
+			<input type="submit" name="submit" value="submit">
+		</form>
+    </body> 
+</html
